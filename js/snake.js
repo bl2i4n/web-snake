@@ -269,5 +269,21 @@ function restart() {
 
 
 function pauser(){
-  var popup = document.getElementById("pausePopup");
+  var modal = document.getElementById("openModal");
+  //need to accommate for when clicking the button the game is paused
+  //stop the key from moving this.alreadyMoved = false;
+  //stop the Audio
+  //on click of the x button return to game
+  //do some googling
+  this.audio.pause();
+  this.alreadyMoved = false;
+  modal.style.visibility = "visible";
+}
+
+function unPauser(){
+  var modal = document.getElementById("openModal");
+  //need to close modal
+  this.audio.play();
+  this.alreadyMoved = true;
+  modal.style.visibility = "hidden";
 }
