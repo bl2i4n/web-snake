@@ -266,3 +266,8 @@ function loop(game, ctx) {
 function restart() {
     location.reload();
 }
+
+
+function pauser(){
+  var popup = document.getElementById("pausePopup");
+}
